@@ -12,7 +12,7 @@ class Car(models.Model):
         return Review.objects.filter(car=self).count()
 
     class Meta:
-        ordering = ['-id']
+        ordering = ['id']
         verbose_name = 'Машина'
         verbose_name_plural = 'Машины'
 
